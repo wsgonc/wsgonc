@@ -288,14 +288,12 @@
     }
 
     window.addEventListener('keydown', function(event) {
-    // Check if the pressed key is 'End'
-    if (event.key === 'End') {
-        // Optional: Prevent default behavior like scrolling to the bottom of the page
-        event.preventDefault(); 
-        
-        goHome();
-    }
-});
+      if (event.key === 'End') {
+          event.preventDefault(); 
+            
+          goHome();
+      }
+    });
   </script>
 
 </body>
