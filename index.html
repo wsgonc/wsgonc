@@ -286,6 +286,13 @@
       div.textContent = text;
       return div.innerHTML;
     }
+
+    window.addEventListener('keydown', function(event) {
+      if (event.key === 'end') {
+        event.preventDefault();
+        goHome();
+      }
+    });
   </script>
 
 </body>
